@@ -1,0 +1,87 @@
+* { box-sizing: border-box; }
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 14px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #0f0f0f;
+  color: #f1f1f1;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 0 0 12px;
+  color: #ff4e45;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  margin: 10px 0 4px;
+}
+
+input {
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 13px;
+}
+
+input:focus { outline: none; border-color: #ff4e45; }
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+button {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #ff4e45;
+  color: #fff;
+}
+
+button:hover { opacity: 0.9; }
+
+button.secondary {
+  background: #2a2a2a;
+  color: #ddd;
+}
+
+.status {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #9ad;
+  min-height: 16px;
+}
+
+.progress {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.last {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #bbb;
+  word-break: break-word;
+}
+
+.hint {
+  margin: 14px 0 0;
+  font-size: 10.5px;
+  color: #777;
+  line-height: 1.4;
+}

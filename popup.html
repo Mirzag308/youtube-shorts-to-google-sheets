@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YT Shorts Extractor</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>YT Shorts Extractor</h1>
+
+  <label for="webAppUrl">Google Sheet Web App URL</label>
+  <input id="webAppUrl" type="text" placeholder="https://script.google.com/macros/s/.../exec" />
+
+  <label for="limit">Kitni shorts? (1&ndash;150)</label>
+  <input id="limit" type="number" min="1" max="150" value="10" />
+
+  <div class="row">
+    <button id="start">Start</button>
+    <button id="stop" class="secondary">Stop</button>
+  </div>
+
+  <div id="status" class="status">Ready. Channel ki Shorts kholo, phir Start dabao.</div>
+  <div id="progress" class="progress"></div>
+  <div id="last" class="last"></div>
+
+  <p class="hint">Pehli dafa: Shorts page open karne ke baad ek dafa page refresh (F5) kar lena.</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
